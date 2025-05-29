@@ -24,7 +24,7 @@ SELECT * FROM world_layoffs.layoffs;
 -- 1. check for duplicates and remove any
 -- 2. standardize data and fix errors
 -- 3. Look at null values and see what 
--- 4. remove any columns and rows that are not necessary - few ways
+-- 4. remove any columns and rows that are not necessary 
 
 
 
@@ -58,7 +58,7 @@ FROM (
 WHERE 
 	row_num > 1;
     
--- let's just look at oda to confirm
+-- let's just look at Oda to confirm
 SELECT *
 FROM world_layoffs.layoffs_staging
 WHERE company = 'Oda'
